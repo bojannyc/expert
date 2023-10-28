@@ -1,0 +1,83 @@
+{
+    "question": "What type of refrigerator are you looking for?",
+    "options": ["Top-Freezer", "Bottom-Freezer", "Side-by-Side", "French Door"],
+    "next": [
+      {
+        "question": "What size do you need?",
+        "options": ["Small (10-18 cu.ft)", "Medium (19-26 cu.ft)", "Large (27+ cu.ft)"],
+        "next": [
+          {
+            "question": "Interested in an energy-efficient model?",
+            "options": ["Yes", "No"],
+            "next": [
+              "Consider the EcoTop 15E - a small, energy-efficient top-freezer model.",
+              "Consider the CompactTop 14C - a small, compact top-freezer refrigerator."
+            ]
+          },
+          {
+            "question": "Need an ice maker?",
+            "options": ["Yes", "No"],
+            "next": [
+              "Consider the IceTop 22I - a medium-sized top-freezer with built-in ice maker.",
+              "Consider the MidTop 21M - a standard medium-sized top-freezer."
+            ]
+          },
+          "Consider the LargeTop 28L - a spacious top-freezer model for bigger households."
+        ]
+      },
+      {
+        "question": "Do you want a pull-out or swing-out freezer?",
+        "options": ["Pull-Out", "Swing-Out"],
+        "next": [
+          {
+            "question": "Looking for additional storage compartments?",
+            "options": ["Yes", "No"],
+            "next": [
+              "Consider the StoreBot 23SP - pull-out freezer with added storage compartments.",
+              "Consider the BasicBot 22BP - standard bottom-freezer with pull-out design."
+            ]
+          },
+          "Consider the SwingBot 24SS - spacious swing-out freezer model."
+        ]
+      },
+      {
+        "question": "Need an external water and ice dispenser?",
+        "options": ["Yes", "No"],
+        "next": [
+          {
+            "question": "Interested in touch controls?",
+            "options": ["Yes", "No"],
+            "next": [
+              "Consider the SideTouch 31T - touch-controlled side-by-side with external water and ice dispenser.",
+              "Consider the SideStream 30S - standard side-by-side with water and ice features."
+            ]
+          },
+          "Consider the SimpleSide 29SS - a straightforward side-by-side refrigerator without external features."
+        ]
+      },
+      {
+        "question": "How important is the freezer space to you?",
+        "options": ["Very Important", "Moderately Important", "Less Important"],
+        "next": [
+          {
+            "question": "Interested in dual temperature zones?",
+            "options": ["Yes", "No"],
+            "next": [
+              "Consider the FrenchZone 40Z - dual temperature zones with large freezer space.",
+              "Consider the FrenchFreeze 39F - French door design with an emphasis on freezer capacity."
+            ]
+          },
+          {
+            "question": "Do you want additional compartments for vegetables and deli?",
+            "options": ["Yes", "No"],
+            "next": [
+              "Consider the FrenchDeli 38D - dedicated compartments for deli and vegetables.",
+              "Consider the FrenchFit 37FF - a balanced French door model with moderate freezer space."
+            ]
+          },
+          "Consider the FrenchLite 36L - French door design with a smaller freezer section."
+        ]
+      }
+    ]
+  }
+  

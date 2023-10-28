@@ -1,0 +1,110 @@
+{
+    "question": "Which screen size are you looking for?",
+    "options": ["< 40 inches", "40-55 inches", "55+ inches"],
+    "next": [
+      {
+        "question": "Is space a constraint?",
+        "options": ["Yes", "No"],
+        "next": [
+          {
+            "question": "Do you prefer a curved screen?",
+            "options": ["Yes", "No"],
+            "next": [
+              "Consider the CurveCompact 37CC - a wall-mountable curved TV to save space.",
+              "Consider the CompactModel 37S - a wall-mountable TV to save space."
+            ]
+          },
+          {
+            "question": "Interested in a frameless design?",
+            "options": ["Yes", "No"],
+            "next": [
+              "Consider the FramelessFit 38F - offers an edge-to-edge viewing experience.",
+              "Consider the SlimSeries 38P - compact stands and slim designs perfect for smaller spaces."
+            ]
+          }
+        ]
+      },
+      {
+        "question": "Are you interested in a Smart TV?",
+        "options": ["Yes", "No"],
+        "next": [
+          {
+            "question": "Any specific streaming platform preference?",
+            "options": ["Netflix", "Amazon Prime", "No preference"],
+            "next": [
+              {
+                "question": "4K resolution or Full HD?",
+                "options": ["4K", "Full HD"],
+                "next": [
+                  "Consider the StreamMax 4K45N - comes with a built-in Netflix app and 4K resolution.",
+                  "Consider the StreamMax FHD45N - comes with a built-in Netflix app and Full HD resolution."
+                ]
+              },
+              {
+                "question": "4K resolution or Full HD?",
+                "options": ["4K", "Full HD"],
+                "next": [
+                  "Consider the PrimeView 4K46A - comes with a built-in Amazon Prime app and 4K resolution.",
+                  "Consider the PrimeView FHD46A - comes with a built-in Amazon Prime app and Full HD resolution."
+                ]
+              },
+              "Consider the SmartChoice 48B - supports all major streaming platforms."
+            ]
+          },
+          "Consider the ClassicView 47X - a high-quality non-smart TV. Pair it with your favorite streaming device."
+        ]
+      },
+      {
+        "question": "What's more important to you?",
+        "options": ["Picture Quality", "Sound Quality", "Both"],
+        "next": [
+          {
+            "question": "OLED or QLED?",
+            "options": ["OLED", "QLED"],
+            "next": [
+              {
+                "question": "Do you need a TV with a high refresh rate?",
+                "options": ["Yes", "No"],
+                "next": [
+                  "Consider the UltraView HR65O - offers unparalleled black levels, contrast with OLED tech, and a high refresh rate.",
+                  "Consider the UltraView O65 - offers unparalleled black levels and contrast with OLED technology."
+                ]
+              },
+              {
+                "question": "Do you need a TV with a high refresh rate?",
+                "options": ["Yes", "No"],
+                "next": [
+                  "Consider the BrightSeries HR66Q - QLED tech for brighter visuals in well-lit rooms and a high refresh rate.",
+                  "Consider the BrightSeries Q66 - QLED tech for brighter visuals, especially in well-lit rooms."
+                ]
+              }
+            ]
+          },
+          {
+            "question": "Do you plan on using an external sound system?",
+            "options": ["Yes", "No"],
+            "next": [
+              {
+                "question": "Do you need a TV with multiple HDMI ports?",
+                "options": ["Yes", "No"],
+                "next": [
+                  "Consider the MultiPort 60MP - packed with multiple HDMI ports and necessary audio outputs.",
+                  "Consider the SoundFlex 60E - packed with necessary audio outputs."
+                ]
+              },
+              {
+                "question": "Interested in voice-controlled volume adjustments?",
+                "options": ["Yes", "No"],
+                "next": [
+                  "Consider the VoiceDolby 61VD - with voice-controlled volume and built-in Dolby Atmos support.",
+                  "Consider the DolbyDream 61D - with built-in Dolby Atmos support for an immersive audio experience."
+                ]
+              }
+            ]
+          },
+          "Consider the PremiumPro 70P - a top-tier model that delivers both stunning visuals and outstanding sound."
+        ]
+      }
+    ]
+  }
+  
