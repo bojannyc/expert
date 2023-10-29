@@ -1,6 +1,7 @@
 import streamlit as st
 import json
 
+
 # Load decision tree from a JSON file
 def load_decision_tree(filename):
     with open(filename, 'r') as f:
@@ -16,12 +17,13 @@ def display_question(node):
         display_question(next_node)
     else:
         # If there's no question, it's a final result
-        st.header("Response")
+        st.header("Recommendation")
         st.info(node)
 
+
 def main():
-    st.title("Demandey TV Recommendation")
-    option = st.selectbox( 'Please select Decision tree?', ('TV Simple', 'TV Complex', 'Refrigiator'))
+    st.title("Demandey Expert Advisor")
+    option = st.selectbox( 'Please select Decision Tree?', ('TV Simple', 'TV Complex', 'Refrigiator'))
     st.divider()
     if option == "TV Simple":
         file="tv1.json"
@@ -34,8 +36,13 @@ def main():
     st.header("Questions")  
     display_question(DECISION_TREE)
     st.divider()
-    st.header ("tree specification - under the hood")
+
+    st.header("Decision Tree JSON")
+    
     st.json(DECISION_TREE)
+
+    svg_str = create_svg_tree(DECISION_TREE)
+    st.markdown(f'<div style="border:1px solid #ccc">{svg_str}</div>', unsafe_allow_html=True)
 
 if __name__ == "__main__":
     main()
