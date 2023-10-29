@@ -41,8 +41,5 @@ def main():
     
     st.json(DECISION_TREE)
 
-    svg_str = create_svg_tree(DECISION_TREE)
-    st.markdown(f'<div style="border:1px solid #ccc">{svg_str}</div>', unsafe_allow_html=True)
-
 if __name__ == "__main__":
     main()
